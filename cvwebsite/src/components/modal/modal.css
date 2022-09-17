@@ -1,0 +1,32 @@
+.modal{
+    height: 100%;
+    width:100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: 0.5s;
+
+   
+}
+.modal.active{
+    transform: scale(1); 
+   position :absolute;
+   top: 0;
+   left: 0;
+}
+.modalContent{
+    background-color: rgba(192,192,192,0.3);
+    box-shadow: 1px 4px 20px 10px snow;
+    width: 90%;
+    height: 90%;
+    transform: scale(0.5);
+    transition: 0.4s all;
+   
+}
+.modalContent.active{
+    transform: scale(1) ;
+}
